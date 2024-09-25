@@ -21,14 +21,12 @@ loginForm.addEventListener('submit', async (event) => {
             errorSame.style.display = "none";
         }
         errorLenght.style.display = "block";
-        // errorLenght.textContent = 'Le mot de passe doit contenir au moins 8 caractères';
         return;
     }
 
     if (password !== confPassword) {
         errorLenght.style.display = "none";
         errorSame.style.display = "block";
-        // errorSame.textContent = 'Les mots de passe doivent être identiques';
         return;
     }
 
