@@ -51,8 +51,6 @@ loginForm.addEventListener('submit', async (event) => {
         loadingSpinner.classList.add('hidden');
         successMsg.classList.remove('hidden');
         loginForm.reset();
-        // il faudrait ausi vider les champs mais je n'ai pas le temps.
-
     } catch (err) {
         console.error('Erreur CATCH : ', err);
     }
